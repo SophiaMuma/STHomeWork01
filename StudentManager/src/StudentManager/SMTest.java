@@ -3,13 +3,16 @@ package StudentManager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//（问题4）在其Main方法中执行StudentManager的App方法
+
 public class SMTest {
 
     public static void main(String[] args) {
         menu();
     }
     // 封装一个主菜单的方法
-    public static void menu(){
+    //（问题12）private public static void menu(){
+    private static void menu(){
         // 数组保存学生信息,类型使用Student类型
         ArrayList<Student> list=new ArrayList<>();
         StudentManager stu=new StudentManager();
@@ -53,7 +56,10 @@ public class SMTest {
                     flag=false;
                     System.out.println("程序退出成功");
                     break;
-            }
-        }
-    }
+                //（问题37）switch-case加上default
+                default:
+                    System.out.println("default");
+            }//(问题6）switch选择结束
+        }//(问题6）while循环结束
+    }//(问题6）menu()结束
 }

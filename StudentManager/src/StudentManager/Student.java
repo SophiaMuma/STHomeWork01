@@ -1,5 +1,5 @@
 package StudentManager;
-//私有字段包括：ID（int）、name(string)、birDate(string或者Java日期)、gender(bool)，分别表示学号、姓名、出生日期和性别
+//私有字段包括：ID（int）、name(string)、birDate(string或者Java日期)、gender，分别表示学号、姓名、出生日期和性别
 //为每个私有字段设置一对儿公有访问方法
 
 public class Student {
@@ -50,7 +50,7 @@ public class Student {
         this.gender = gender;
     }
 
-    //@Override
+    @Override
     public String toString() {
         return "{ID: "+this.id+",name: "+this.name+",birDate: "+this.birDate+",gender: "+this.gender+"}";
     }
